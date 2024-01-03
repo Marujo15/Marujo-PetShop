@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --color-dark1: rgba(40, 40, 40, 1);
+    --color-dark2: rgb(53, 53, 53);
+    --color-dark3: rgb(36, 36, 36);
+    --color-teal: teal;
+    --color-teal2: rgb(0, 109, 109);
+    --color-teal3: rgb(8, 163, 163);
+    --color-teal4: rgb(6, 150, 150);
+    --color-yellow: rgb(255, 174, 0);
+    --color-white: #fff;
+    --color-white2: #ffffffb0;
+    --color-black: #000;
+}
+
+body {
+    background-color: var(--color-dark1);
+}
+
+header {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-teal);
+}
+
+header div {
+    background-color: var(--color-white);
+    margin-left: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    width: 90px;
+    margin-left: 3px;
+}
+
+header ul li,
+header ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-dark1);
+    transition: all 0.3s ease;
+    background: var(--color-teal4);
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+header ul {
+    display: flex;
+    gap: 3px;
+    margin-right: 10px;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+    color: var(--color-white);
+}
+
+#pet-btns {
+    order: 1;
+    height: 60px;
+    width: 100%;
+    background: var(--color-teal3);
+    padding: 0px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pet-btns a {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-teal4);
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 5px;
+    font-size: 11px;
+}
+
+#pet-btns a:hover,
+#pet-btns a:focus {
+    border: 1px solid transparent;
+    box-shadow: none;
+    background: rgb(0, 109, 109);
+}
+
+main section.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+main section.contato div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-teal);
+    width: 300px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.contato div h1 {
+
+    color: var(--color-dark1);
+    font-size: 30px;
+    background: var(--color-yellow);
+    position: relative;
+    padding: 6px 10px;
+    border-radius: 50px;
+    top: -20px;
+}
+
+.socialMedia div {
+    font-size: 20px;
+}
+
+.socialMedia div a {
+    color: var(--color-white);
+    background: var(--color-dark1);
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#gmail {
+    background: var(--color-white);
+    height: 50px;
+    width: 230px;
+    z-index: 10;
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+
+#phone {
+    background: var(--color-white);
+    height: 50px;
+    width: 230px;
+    margin: 20px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+#gmail i,
+#phone i {
+    font-size: 20px;
+    color: var(--color-white);
+
+}
+
+#gmail i {
+    background: var(--color-dark1);
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#phone i {
+    background: var(--color-dark1);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#private {
+    background: var(--color-white);
+    width: 230px;
+    border-radius: 20px;
+}
+
+.linkedin a:hover,
+.git a:hover {
+    background: var(--color-white);
+    color: var(--color-dark1);
+}
+
+.linkedin a,
+.git a {
+    transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 375px) {
+
+    header ul li,
+    header ul li a {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+    header ul {
+        gap: 5px;
+    }
+
+}
+
+@media screen and (min-width: 424px) {
+    
+    header ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    header ul li,
+    header ul li a {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    header ul {
+        gap: 15px;
+    }
+
+}

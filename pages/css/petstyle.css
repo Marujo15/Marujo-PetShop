@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --color-dark1: rgba(40, 40, 40, 1);
+    --color-dark2: rgb(53, 53, 53);
+    --color-dark3: rgb(36, 36, 36);
+    --color-teal: teal;
+    --color-teal2: rgb(0, 109, 109);
+    --color-teal3: rgb(8, 163, 163);
+    --color-teal4: rgb(6, 150, 150);
+    --color-yellow: rgb(255, 174, 0);
+    --color-white: #fff;
+    --color-white2: #ffffffb0;
+    --color-black: #000;
+}
+
+body {
+    background-color: var(--color-dark1);
+}
+
+header {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-teal);
+}
+
+header div {
+    background-color: var(--color-white);
+    margin-left: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    width: 90px;
+    margin-left: 3px;
+}
+
+header ul li,
+header ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-dark1);
+    transition: all 0.3s ease;
+    background: var(--color-teal4);
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+header ul {
+    display: flex;
+    gap: 3px;
+    margin-right: 10px;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+    color: var(--color-white);
+}
+
+#pet-btns {
+    order: 1;
+    height: 60px;
+    width: 100%;
+    background: var(--color-teal3);
+    padding: 0px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pet-btns a {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-teal4);
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 5px;
+    font-size: 11px;
+}
+
+#pet-btns a:hover,
+#pet-btns a:focus {
+    border: 1px solid transparent;
+    box-shadow: none;
+    background: var(--color-teal2);
+}
+
+.container {
+    margin: 10px 30px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.produto {
+    min-width: 250px;
+    height: 330px;
+    border: 1px solid rgb(211, 211, 211);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 25% 15%;
+    background: var(--color-dark2);
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+
+}
+
+.produto>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--color-dark3);
+}
+
+.produto>div>button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: var(--color-yellow);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.produto>div>button:hover,
+.produto>div>button:focus {
+    background: var(--color-white);
+    color: var(--color-yellow2);
+    font-weight: bold;
+}
+
+.foto-produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prd-content {
+    max-width: 195px;
+    white-space: initial;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.li {
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.promotion-price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.promotion-cut-price {
+    text-decoration: line-through;
+}
+
+.title {
+    margin: 10px 50px;
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 375px) {
+
+    header ul li,
+    header ul li a {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+    header ul {
+        gap: 5px;
+    }
+
+}
+
+@media screen and (min-width: 424px) {
+
+    header ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    header ul li,
+    header ul li a {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    header ul {
+        gap: 15px;
+    }
+
+    #pet-btns a{
+        font-size: 15px;
+    }
+
+}
+

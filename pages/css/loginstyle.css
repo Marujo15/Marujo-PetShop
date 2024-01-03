@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --color-dark1: rgba(40, 40, 40, 1);
+    --color-dark2: rgb(53, 53, 53);
+    --color-dark3: rgb(36, 36, 36);
+    --color-teal: teal;
+    --color-teal2: rgb(0, 109, 109);
+    --color-teal3: rgb(8, 163, 163);
+    --color-teal4: rgb(6, 150, 150);
+    --color-yellow: rgb(255, 174, 0);
+    --color-white: #fff;
+    --color-white2: #ffffffb0;
+    --color-black: #000;
+}
+
+body {
+    background-color: var(--color-dark1);
+}
+
+header {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-teal);
+}
+
+header div {
+    background-color: var(--color-white);
+    margin-left: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    width: 90px;
+    margin-left: 3px;
+}
+
+header ul li,
+header ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-dark1);
+    transition: all 0.3s ease;
+    background: var(--color-teal4);
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+header ul {
+    display: flex;
+    gap: 3px;
+    margin-right: 10px;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+    color: var(--color-white);
+}
+
+#pet-btns {
+    order: 1;
+    height: 60px;
+    width: 100%;
+    background: var(--color-teal3);
+    padding: 0px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pet-btns a {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-teal4);
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 5px;
+    font-size: 11px;
+}
+
+#pet-btns a:hover,
+#pet-btns a:focus {
+    border: 1px solid transparent;
+    box-shadow: none;
+    background: rgb(0, 109, 109);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-teal);
+    height: 315px;
+    margin: 70px 20px;
+    border-radius: 20px;
+}
+
+.login div form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.input {
+    height: 30px;
+    padding: 0 30px;
+    border-radius: 5px;
+    border: 1px transparent;
+    transition: all 0.3s ease;
+}
+
+.login div form div,
+.register div form div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login div form div input,
+.register div form div input {
+    width: 40%;
+    height: 30px;
+    background: var(--color-yellow);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-teal);
+    height: 315px;
+    margin: 70px 20px;
+    border-radius: 20px;
+}
+
+.register div form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.login h1,
+.register h1 {
+
+    background: var(--color-yellow);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    top: -17px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+#ou {
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: underline var(--color-dark2);
+}
+
+i {
+    transform: translate(5px, 26px);
+    font-size: 22px;
+    color: var(--color-dark1);
+    width: 0;
+}
+
+.login div form div input,
+.register div form div input {
+    transition: all 0.3s ease;
+}
+
+.login div form div input:hover,
+.register div form div input:hover {
+    background: var(--color-dark1);
+    color: var(--color-yellow);
+}
+
+@media screen and (min-width: 960px) {
+    main {
+        flex-direction: inherit;
+        justify-content: center;
+    }
+
+    main h1 {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+
+    header ul li,
+    header ul li a {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+    header ul {
+        gap: 5px;
+    }
+
+}
+
+@media screen and (min-width: 424px) {
+    
+    header ul {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+
+    header ul li,
+    header ul li a {
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    header ul {
+        gap: 15px;
+    }
+
+}
