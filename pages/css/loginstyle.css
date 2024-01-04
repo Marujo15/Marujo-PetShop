@@ -133,6 +133,7 @@ main {
     border-radius: 5px;
     border: 1px transparent;
     transition: all 0.3s ease;
+    outline: none;
 }
 
 .login div form div,
